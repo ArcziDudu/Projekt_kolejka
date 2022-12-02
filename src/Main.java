@@ -10,6 +10,5 @@ public class Main {
             String name = scanner.nextLine();
             personQueue.StartMethod(name);
         }
-
     }
 }

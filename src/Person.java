@@ -3,7 +3,7 @@ import java.math.BigInteger;
 public class Person {
     private final String name;
     private final String surname;
-    private final BigInteger counter;
+    private  BigInteger counter;
     private final String id;
 
     public Person(String name, String surname, BigInteger counter) {
@@ -11,6 +11,10 @@ public class Person {
         this.surname = surname;
         this.counter = counter;
         this.id = generateId();
+    }
+
+    public void setCounter(BigInteger counter) {
+        this.counter = counter;
     }
 
     public BigInteger getCounter() {
