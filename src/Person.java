@@ -34,6 +34,14 @@ public class Person{
         }
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
     @Override
     public String toString() {
         String sb = name + "_" + surname +

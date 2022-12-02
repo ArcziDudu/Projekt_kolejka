@@ -90,14 +90,18 @@ public class PersonQueue {
     }
 
     private void extracted(String PersonName, String PersonSurname, BigInteger bigInteger, Person person) {
+
         //funkcja sprawdzająca czy taka osoba jest już w kolejce i jesli tak to ma zwiększany counter
+
         for (Person person1 : personQueue) {
         if(person1.generateId().contains(PersonName)&&person1.generateId().contains(PersonSurname)){
-            bigInteger = bigInteger.add(BigInteger.ONE);
+            bigInteger = person1.getCounter().add(BigInteger.ONE);
+
             person.setCounter(bigInteger);
         }
         }
     }
+
 
 
 }
