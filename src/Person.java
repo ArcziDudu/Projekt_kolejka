@@ -19,9 +19,7 @@ public class Person{
         this.vip = vip;
     }
 
-    public void setCounter(BigInteger counter) {
-        this.counter = counter;
-    }
+
 
     public BigInteger getCounter() {
         return counter;
@@ -47,5 +45,7 @@ public class Person{
         return sb;
     }
 
-
+    public void setCounter(BigInteger counter) {
+        this.counter = counter;
+    }
 }
