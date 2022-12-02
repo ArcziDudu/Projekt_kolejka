@@ -14,6 +14,12 @@ public class PersonQueue {
             processQueue();
         }else if(name.contains("leave person")){
             leavePersonFromQueue(name);
+        }else{
+            System.out.println("sprawdź pisownie i spróbuj ponownie");
+            System.out.println("add(imie_nazwisko) - dodaje kolejną osobę do kolejki");
+            System.out.println("process - zdejmuje osobę która została dodana jako pierwsza");
+            System.out.println("leave person(imie_nazwisko_id) - osoba zostaje usunięta z kolejki");
+            System.out.println("add(imie_nazwisko, VIP) - dodaje osobe na pierwsze miejsce w kolejce");
         }
     }
 
